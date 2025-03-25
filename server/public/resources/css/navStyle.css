@@ -1,0 +1,96 @@
+/* Убираем отступы и поля по умолчанию */
+body {
+    background-image: url("../images/library.jpg");
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для навигационной панели */
+.navbar {
+    background-color: grey;
+    width: 100%;
+    height: 70px;
+    list-style-type: none;
+    margin: 0; /* Убедимся, что у .navbar нет отступов */
+    padding: 0; /* Убедимся, что у .navbar нет внутренних отступов */
+}
+
+/* Стили для списка внутри навигационной панели */
+.navbar ul {
+    margin: 0; /* Убираем отступы у списка */
+    padding: 0; /* Убираем внутренние отступы у списка */
+    list-style-type: none; /* Убираем маркеры списка */
+}
+
+/* Стили для ссылок в навигационной панели */
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30pt;
+    float: left;
+    margin: 10px 20px 0px 10px;
+}
+
+/* Стили для ссылок при наведении */
+.nav-link:hover {
+    color: black;
+}
+
+/* Стили для основного контейнера */
+.container {
+    margin-top: 270px;
+    margin-left: 10%;
+    max-width: 70%;
+    min-height: 800px;
+    background-color: rgb(63, 63, 63);
+    border-radius: 40px;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .book-card {
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .book-card img {
+    width: 100%;
+    height: 200px;
+    height: auto;
+    display: block;
+  }
+  
+  .book-info {
+    padding: 15px;
+  }
+  
+  .book-info h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  
+  .book-info p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+  }
