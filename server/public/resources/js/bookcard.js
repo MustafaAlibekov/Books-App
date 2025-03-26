@@ -14,19 +14,19 @@ document.addEventListener("DOMContentLoaded", () => {
       // Заполняем карточку HTML-разметкой с данными о книге
       card.innerHTML = `
         <!-- Изображение обложки книги -->
-        <img src="${book.BookImage}" alt="${book.BookTitle}">
+        <img style="width: 200px; height: 300px;" src="${book.bookimage}" alt="${book.booktitle}">
   
         <!-- Блок с информацией о книге -->
         <div class="book-info">
           <!-- Название книги -->
-          <h2>${book.BookTitle}</h2>
+          <h2>${book.booktitle}</h2>
   
           <!-- Автор книги -->
-          <p><strong>Автор:</strong> ${book.author}</p>
+          <p><strong>Автор:</strong> ${book.AuthorName}</p>
   
           <!-- Описание книги -->
-          <p>${book.BookDesc}</p>
-          <p><a><a href="${book.BookLink}">Читать</a></p>
+          <p>${book.bookdesc}</p>
+          <p><a><a href="${book.booklink}">Читать</a></p>
         </div>
       `;
   

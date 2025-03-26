@@ -19,6 +19,10 @@ app.get('/', (req, res) => {
   res.sendFile(filePath);
 });
 
+app.get('/1/', (req, res) => {
+  const filePath = path.join(__dirname, '/views/index2.html');
+  res.sendFile(filePath);
+});
 // Проверка подключения к базе данных
 pool.query('SELECT NOW()', (err, res) => {
   if (err) {
